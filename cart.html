@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Row and Column</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .square-input {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        text-align: center;
+        max-width: 40px;
+      }
+
+      .icon-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: inherit;
+        font-size: 1.5rem;
+        padding: 0;
+      }
+
+      .icon-button:hover {
+        color: red;
+      }
+
+      .text-truncate {
+        white-space: nowrap;        /* Prevent text from wrapping to the next line */
+        overflow: hidden;           /* Hide the overflowed text */
+        text-overflow: ellipsis;    /* Add the ellipsis (...) */
+    }
+
+    </style>
+  </head>
+  <body>
+   <div class="col-md-12 container text-dark text-center d-flex align-items-start p-5 flex-md-row flex-column-reverse">
+    <div class="row flex-md-row flex-column justify-content-between align-items-center col-md-9">
+        <div class="d-flex col-md-9 p-1 justify-content-between align-items-center mb-3 order-1">
+            <div class="fs-4 fs-md-3 fs-lg-2">Cart</div>
+            <div class="fs-4 fs-md-3 fs-lg-2">5 Item(s)</div>
+        </div>
+
+        <div
+            class="d-flex flex-wrap col-md-9 p-1 justify-content-between mb-3 p-3 align-items-center border border-secondary bg-light order-2"
+        >
+            <div class="col-2">
+                <img
+                    src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="w-100"
+                />
+            </div>
+
+            <div class="d-flex flex-column align-items-start">
+                <div class="p-2 bd-highlight fs-6">Beige and Black CB Acra</div>
+                <div class="p-2 bd-highlight fs-6">Size XS</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Price</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Quantity</div>
+                <div class="p-2 bd-highlight">
+                    <input type="number" class="square-input text-center" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Total</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="p-2 bd-highlight">
+                <button class="icon-button">
+                    <i class="fa-regular fa-square-minus"></i>
+                </button>
+            </div>
+        </div>
+        <div
+            class="d-flex flex-wrap col-md-9 p-1 justify-content-between mb-3 p-3 align-items-center border border-secondary bg-light order-2"
+        >
+            <div class="col-2">
+                <img
+                    src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="w-100"
+                />
+            </div>
+
+            <div class="d-flex flex-column align-items-start">
+                <div class="p-2 bd-highlight fs-6">Beige and Black CB Acra</div>
+                <div class="p-2 bd-highlight fs-6">Size XS</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Price</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Quantity</div>
+                <div class="p-2 bd-highlight">
+                    <input type="number" class="square-input text-center" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Total</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="p-2 bd-highlight">
+                <button class="icon-button">
+                    <i class="fa-regular fa-square-minus"></i>
+                </button>
+            </div>
+        </div>
+        <div
+            class="d-flex flex-wrap col-md-9 p-1 justify-content-between mb-3 p-3 align-items-center border border-secondary bg-light order-2"
+        >
+            <div class="col-2">
+                <img
+                    src="https://images.pexels.com/photos/17459715/pexels-photo-17459715/free-photo-of-woman-in-boots-and-jacket.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                    class="w-100"
+                />
+            </div>
+
+            <div class="d-flex flex-column align-items-start">
+                <div class="p-2 bd-highlight fs-6">Beige and Black CB Acra</div>
+                <div class="p-2 bd-highlight fs-6">Size XS</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Price</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Quantity</div>
+                <div class="p-2 bd-highlight">
+                    <input type="number" class="square-input text-center" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Total</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="p-2 bd-highlight">
+                <button class="icon-button">
+                    <i class="fa-regular fa-square-minus"></i>
+                </button>
+            </div>
+        </div>
+        <div
+            class="d-flex flex-wrap col-md-9 p-1 justify-content-between mb-3 p-3 align-items-center border border-secondary bg-light order-2"
+        >
+            <div class="col-2">
+                <img
+                    src="https://images.pexels.com/photos/17459706/pexels-photo-17459706/free-photo-of-woman-posing-in-coat-and-boots.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt=""
+                    class="w-100"
+                />
+            </div>
+
+            <div class="d-flex flex-column align-items-start">
+                <div class="p-2 bd-highlight fs-6">Beige and Black CB Acra</div>
+                <div class="p-2 bd-highlight fs-6">Size XS</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Price</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Quantity</div>
+                <div class="p-2 bd-highlight">
+                    <input type="number" class="square-input text-center" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Total</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="p-2 bd-highlight">
+                <button class="icon-button">
+                    <i class="fa-regular fa-square-minus"></i>
+                </button>
+            </div>
+        </div>
+        <div
+            class="d-flex flex-wrap col-md-9 p-1 justify-content-between mb-3 p-3 align-items-center border border-secondary bg-light order-2"
+        >
+            <div class="col-2">
+                <img
+                    src="https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt=""
+                    class="w-100"
+                />
+            </div>
+
+            <div class="d-flex flex-column align-items-start">
+                <div class="p-2 bd-highlight fs-6">Beige and Black CB Acra</div>
+                <div class="p-2 bd-highlight fs-6">Size XS</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Price</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Quantity</div>
+                <div class="p-2 bd-highlight">
+                    <input type="number" class="square-input text-center" />
+                </div>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="p-2 bd-highlight fs-6">Total</div>
+                <div class="p-2 bd-highlight fs-6">14,000</div>
+            </div>
+
+            <div class="p-2 bd-highlight">
+                <button class="icon-button">
+                    <i class="fa-regular fa-square-minus"></i>
+                </button>
+            </div>
+        </div>
+       
+       
+    </div>
+    <div class="row d-flex col-md-3 p-1 justify-content-center align-items-start order-md-3 bg-light p-3">
+        <div><span>Cart Summary</span></div>
+       
+       <div class="d-flex justify-content-between">
+       <div>Subtotal</div>
+       <div>Rs 42,000</div>
+    </div>
+    <div class="d-flex justify-content-between">
+        <div>Tax</div>
+        <div>Calculated at Checkout</div>
+     </div>
+     <div class="d-flex justify-content-between ">
+        <div>Shipping</div>
+        <div>Calculated at Checkout</div>
+     </div>
+     <br> <br>
+     <div class="d-flex justify-content-between ">
+        <div><strong>Total</strong></div>
+        <div><strong>Rs 42000 </strong></div>
+     </div>
+      <br><br>
+     <div class="d-flex justify-content-center text-primary">
+        <div>Order Special Instructions</div>
+     </div>
+     <br> <br>
+     <div class="d-flex justify-content-center border-bottom border-secondary mb-4 pb-3 text-primary">
+        <div>Get Shipping Estimates</div>
+     </div>
+
+     <div class="d-flex justify-content-center p-3 bg-dark rounded border-bottom border-secondary">
+        <div class="text-light">Check Out</div>
+     </div>
+     <div class="d-flex justify-content-center border-bottom border-secondary m-4 pb-3">
+        <i class="fa-brands fa-paypal rounded border p-2 border-secondary "></i>
+     </div>
+     <div class="d-flex justify-content-center p-3 rounded border border-secondary m-4">
+        <div class="text-dark">Update Cart</div>
+     </div>
+     <div class="d-flex justify-content-center p-3 rounded border border-secondary">
+        <div class="text-dark">Continue Shopping</div>
+     </div>
+    </div>
+   
+</div>
+</body>
+</html>
